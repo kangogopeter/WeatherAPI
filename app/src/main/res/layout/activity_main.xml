@@ -1,18 +1,108 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <TextView
+    <ImageView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="-5dp"
+        android:src="@drawable/back" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="732dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="-1dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/background" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="74dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="-4dp"
+        android:layout_marginRight="-4dp"
+        android:layout_marginBottom="651dp"
+        android:text="My Weather!"
+        android:textColor="@android:color/holo_red_light"
+        android:textSize="@android:dimen/notification_large_icon_height"
+        android:textStyle="italic"
+        android:typeface="serif"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <EditText
+        android:id="@+id/locationEditText"
+        android:layout_width="385dp"
+        android:layout_height="59dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="99dp"
+        android:layout_marginEnd="11dp"
+        android:layout_marginRight="11dp"
+        android:layout_marginBottom="473dp"
+        android:background="@drawable/cool"
+        android:text="Search for weather"
+        android:textColor="#E9C60F"
+        android:textSize="23dp" />
+
+    <Button
+        android:id="@+id/findWeatherLocationButton"
+        android:layout_width="202dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="101dp"
+        android:layout_marginRight="101dp"
+        android:layout_marginBottom="382dp"
+        android:background="#F0A4F8"
+        android:text="Search Weather"
+        android:textColor="#50ECBB"
+        android:textSize="12dp" />
+
+    <TextView
+        android:layout_width="186dp"
+        android:layout_height="212dp"
+        android:layout_below="@android:id/icon"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="9dp"
+        android:layout_marginRight="9dp"
+        android:layout_marginBottom="55dp"
+        android:text="Nature is so powerful, so strong. Capturing its essence is not easy - your work becomes a dance with light and the weather. It takes you to a place within yourself."
+        android:textAlignment="center"
+        android:textColor="@android:color/background_light"
+        android:textStyle="italic"
+        android:textSize="15dp"
+        android:typeface="serif"/>
+
+    <TextView
+        android:id="@+id/appNameTextView"
+        android:layout_width="186dp"
+        android:layout_height="212dp"
+        android:layout_below="@android:id/icon"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="221dp"
+        android:layout_marginRight="221dp"
+        android:layout_marginBottom="58dp"
+        android:text="A good vacation for me is going to warm weather. Being able to go outside, in the sun, hit the beach, play outside sports. Being active outside. Going swimming, hanging by the pool, having a couple drinks, having a couple of your close buddies around, and just having a blast."
+        android:textAlignment="center"
+        android:textSize="17dp"
+        android:textColor="@android:color/background_light"
+        android:textStyle="italic"/>
+
+</RelativeLayout>
